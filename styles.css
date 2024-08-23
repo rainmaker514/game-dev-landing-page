@@ -30,7 +30,7 @@ body {
   border-radius: 24px;
   color: white;
   display: inline-block;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   text-decoration: none;
   position: relative;
@@ -93,4 +93,105 @@ nav ul li a {
   font-size: 16px;
   color: #ffffff;
   text-decoration: none;
+}
+
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+.hero-section .left {
+  flex: 1;
+}
+
+.hero-section .left h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 125%;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.hero-section .left p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #ffffff;
+  margin-bottom: 30px;
+  width: 457px;
+}
+
+.hero-section .right {
+  align-self: flex-end;
+}
+
+.hero-section .right img {
+  height: 582px;
+  vertical-align: middle;
+}
+
+.achievement-card {
+  position: absolute;
+  min-width: 200px;
+}
+
+.achievement-card .content {
+  border-radius: 24px;
+  background-color: var(--white);
+  padding: 8px 32px;
+  z-index: 2;
+  position: relative;
+}
+
+.achievement-card.students-enrolled {
+  left: 49%;
+  top: 270px;
+}
+
+.achievement-card.overall-rating {
+  left: 45%;
+  top: 470px;
+}
+
+.achievement-card .content div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.achievement-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--dark-blue);
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.achievement-card p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--dark-blue);
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+
+.achievement-card .bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(180deg, #6f7dfb 0%, #3b448f 100%);
+  border-radius: 24px;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
 }
