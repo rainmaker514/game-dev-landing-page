@@ -317,7 +317,7 @@ nav ul li a {
   position: relative;
 }
 
-.courses-section .wrapper .btn{
+.courses-section .wrapper .btn {
   position: absolute;
   right: 0;
 }
@@ -386,4 +386,32 @@ nav ul li a {
   position: absolute;
   top: 2px;
   left: -6px;
+}
+
+.app-section {
+  text-align: center;
+}
+
+.app-section .app-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 24px;
+}
+
+.app-section .app-btn {
+  padding: 16px 31px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 310px;
+}
+
+.app-section .app-btn span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
 }
