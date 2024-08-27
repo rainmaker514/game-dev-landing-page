@@ -2,7 +2,7 @@
 :root {
   --orange: #da722c;
   --dark-blue: #023047;
-  --black: #070917;
+  --black-russian: #070917;
   --blue: #6f7dfb;
   --azure-mist: #e8f7fb;
 }
@@ -95,7 +95,18 @@ nav {
   align-items: center;
   position: fixed;
   width: 1134px;
-  top: 36px;
+  top: 0;
+  padding: 36px 0;
+  z-index: 3;
+  transition: all 500ms ease;
+}
+
+nav.scrolled{
+  background-color: var(--black-russian);
+  box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 8px 8px;
+  top: 0;
+  padding: 12px;
 }
 
 nav .logo {
@@ -414,4 +425,80 @@ nav ul li a {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 24px;
+}
+
+/* FOOTER SECTION */
+footer {
+  background: var(--black-russian);
+  color: #fff;
+  margin-top: 100px;
+  padding: 70px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer h3 {
+  color: var(--orange);
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+footer ul li {
+  margin: 16px 0;
+}
+
+footer .links-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr;
+}
+
+footer .social {
+  margin-left: 20px;
+}
+
+footer .social a {
+  margin-right: 28px;
+}
+
+footer form {
+  margin-left: 20px;
+  margin-top: 16px;
+  position: relative;
+}
+
+footer form input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000;
+  border-radius: 8px;
+  padding: 8px 32px;
+  border: none;
+  width: 100%;
+}
+
+footer form .submit-btn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--dark-blue);
+  border-radius: 8px;
+  color: #fff;
+  padding: 8px 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer .copyright {
+  margin-top: 36px;
 }
